@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "event-bus": "npm run start --prefix ./event-bus",
+    "posts": "npm run start --prefix ./posts",
+    "comments": "npm run start --prefix ./comments",
+    "query": "npm run start --prefix ./query",
+    "client": "npm run start --prefix ./client",
+    "dev": "concurrently -n \"event-bus,posts,comments,query,react\" -c \"red,green,yellow,blue,cyan\" \"npm run event-bus\" \"npm run posts\" \"npm run comments\" \"npm run query\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkircsi/blog-microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkircsi/blog-microservice/issues"
+  },
+  "homepage": "https://github.com/tkircsi/blog-microservice#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
