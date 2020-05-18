@@ -8,8 +8,9 @@
     "posts": "npm run start --prefix ./posts",
     "comments": "npm run start --prefix ./comments",
     "query": "npm run start --prefix ./query",
+    "moderation": "npm run start --prefix ./moderation",
     "client": "npm run start --prefix ./client",
-    "dev": "concurrently -n \"event-bus,posts,comments,query,react\" -c \"red,green,yellow,blue,cyan\" \"npm run event-bus\" \"npm run posts\" \"npm run comments\" \"npm run query\" \"npm run client\""
+    "dev": "concurrently -n \"event-bus,posts,comments,query,moderation,react\" -c \"red,green,yellow,blue,cyan,magenta\" \"npm run event-bus\" \"npm run posts\" \"npm run comments\" \"npm run query\" \"npm run moderation\" \"npm run client\""
   },
   "repository": {
     "type": "git",
